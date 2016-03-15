@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="041f0f89-df49-4aae-8d59-6ff62bab1062" name="Default" comment="" />
+    <list default="true" id="041f0f89-df49-4aae-8d59-6ff62bab1062" name="Default" comment="1.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="SpiderStudy.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -16,11 +19,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SpiderStudy$SpiderManTwo.coverage" NAME="SpiderManTwo Coverage Results" MODIFIED="1455540576201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/SpiderStudy$RegularFindIterOne.coverage" NAME="RegularFindIterOne Coverage Results" MODIFIED="1455540107594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regular" />
+    <SUITE FILE_PATH="coverage/pandave-python$Unittests_in_pandave_python.coverage" NAME="Unittests in pandave-python Coverage Results" MODIFIED="1458030649574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SpiderStudy$RegularFindAllOne.coverage" NAME="RegularFindAllOne Coverage Results" MODIFIED="1455540037827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regular" />
     <SUITE FILE_PATH="coverage/SpiderStudy$SpiderZhihuQuestionDetail.coverage" NAME="SpiderZhihuQuestionDetail Coverage Results" MODIFIED="1456321205827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/instance" />
     <SUITE FILE_PATH="coverage/SpiderStudy$SpiderManOne.coverage" NAME="SpiderManOne Coverage Results" MODIFIED="1454506592571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/SpiderStudy$SpiderManQueryCookie.coverage" NAME="SpiderManQueryCookie Coverage Results" MODIFIED="1455444888245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/SpiderStudy$RegularSearchOne.coverage" NAME="RegularSearchOne Coverage Results" MODIFIED="1455539803422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regular" />
+    <SUITE FILE_PATH="coverage/pandave-python$SpiderZhihuQuestionDetail.coverage" NAME="SpiderZhihuQuestionDetail Coverage Results" MODIFIED="1457101976446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/instance" />
     <SUITE FILE_PATH="coverage/SpiderStudy$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1454501473132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/SpiderStudy$SpiderManSimulateLogin.coverage" NAME="SpiderManSimulateLogin Coverage Results" MODIFIED="1455540546391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/SpiderStudy$SpiderManCookiePersistence.coverage" NAME="SpiderManCookiePersistence Coverage Results" MODIFIED="1455443787642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
@@ -40,14 +45,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpiderZhihuQuestionDetail.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpiderZhihuQuestionDetail.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68333334">
-              <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+                <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+                <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+                <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+                <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+                <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+                <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+                <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+                <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+                <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+                <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlConnPool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/MysqlConnPool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpiderZhihuAnswerDetail.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuAnswerDetail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="err.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/err.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connections.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/connections.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,6 +143,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,8 +166,12 @@
         <option value="$PROJECT_DIR$/regular/RegularMatchTwo.py" />
         <option value="$PROJECT_DIR$/instance/SpiderManOne.py" />
         <option value="$PROJECT_DIR$/instance/SpiderZhihuAnswerDetail.py" />
-        <option value="$PROJECT_DIR$/db/MysqlBase.py" />
+        <option value="$PROJECT_DIR$/entity/Topic.py" />
         <option value="$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py" />
+        <option value="$PROJECT_DIR$/db/MysqlConnPool.py" />
+        <option value="$PROJECT_DIR$/db/MysqlBase.py" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -91,10 +181,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="-759" />
+    <option name="x" value="160" />
+    <option name="y" value="23" />
     <option name="width" value="1080" />
-    <option name="height" value="1897" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -121,8 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -150,7 +240,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Minutch/PycharmProjects/SpiderStudy/base/Demo.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -159,25 +249,7 @@
       <recent name="$PROJECT_DIR$/base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SpiderZhihuQuestionDetail">
-    <configuration default="false" name="SpiderManSimulateLogin" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderStudy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/SpiderManSimulateLogin.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in pandave-python">
     <configuration default="false" name="SpiderManTwo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,7 +279,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderStudy" />
+      <module name="pandave-python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/instance/SpiderZhihuAnswerDetail.py" />
       <option name="PARAMETERS" value="" />
@@ -225,7 +297,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderStudy" />
+      <module name="pandave-python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py" />
       <option name="PARAMETERS" value="" />
@@ -248,6 +320,29 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/MysqlBase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in pandave-python" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pandave-python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -444,19 +539,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.SpiderManSimulateLogin" />
-      <item index="1" class="java.lang.String" itemvalue="Python.SpiderManTwo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SpiderZhihuAnswerDetail" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SpiderZhihuQuestionDetail" />
-      <item index="4" class="java.lang.String" itemvalue="Python.MysqlBase" />
+      <item index="0" class="java.lang.String" itemvalue="Python.SpiderManTwo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SpiderZhihuAnswerDetail" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SpiderZhihuQuestionDetail" />
+      <item index="3" class="java.lang.String" itemvalue="Python.MysqlBase" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in pandave-python" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.SpiderZhihuQuestionDetail" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MysqlBase" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SpiderZhihuAnswerDetail" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SpiderManTwo" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SpiderManSimulateLogin" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in pandave-python" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SpiderZhihuQuestionDetail" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MysqlBase" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SpiderZhihuAnswerDetail" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SpiderManTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -471,30 +566,43 @@
       <option name="number" value="Default" />
       <updated>1454496084465</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.将爬取到的知乎话题和回复经过处理后保存至数据库">
+      <created>1457172862090</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1457172862090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_pandave-python - 2016.03.15 at 16h 30m 51s.xml">
+      <configuration name="Unittests in pandave-python" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-759" width="1080" height="1897" extended-state="6" />
-    <editor active="true" />
+    <frame x="160" y="23" width="1080" height="704" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18055555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3480315" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32330415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966226" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09956236" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31496063" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15700218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31644145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -508,19 +616,120 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.将爬取到的知乎话题和回复经过处理后保存至数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.将爬取到的知乎话题和回复经过处理后保存至数据库" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+    <entry file="file://$PROJECT_DIR$/db/MysqlConnPool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/MysqlBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <marker date="1458030097000" expanded="true" signature="820:891" placeholder="SELECT id,ti... pandave_topic" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/MysqlConnPool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/MysqlBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <marker date="1458030097000" expanded="true" signature="820:891" placeholder="SELECT id,ti... pandave_topic" />
           </folding>
         </state>
       </provider>
@@ -531,6 +740,203 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/MysqlBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <marker date="1458030097000" expanded="true" signature="820:891" placeholder="SELECT id,ti... pandave_topic" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuAnswerDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
           </folding>
         </state>
       </provider>
@@ -562,6 +968,34 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
           </folding>
         </state>
       </provider>
@@ -724,6 +1158,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuAnswerDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1457101976000" expanded="true" signature="5606:5677" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5683" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5698" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5718" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="5606:5719" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="6124:6353" placeholder="INSERT INTO pandave_topic... " />
+            <marker date="1457101976000" expanded="true" signature="6537:6650" placeholder="SELECT id,ti... pandave_topic" />
+            <marker date="1457101976000" expanded="true" signature="7648:7703" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7760" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7771" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="7648:7868" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="9174:9442" placeholder="select id,to... pandave_topic_answer" />
+            <marker date="1457101976000" expanded="true" signature="10110:10448" placeholder="INSERT INTO pandave_topic_answer... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11398" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11449" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11452" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11501" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11504" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11554" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11558" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11605" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11608" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11666" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11669" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11727" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11730" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11780" placeholder="update panda... " />
+            <marker date="1457101976000" expanded="true" signature="11308:11832" placeholder="update panda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/MysqlConnPool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -731,24 +1226,34 @@
     <entry file="file://$PROJECT_DIR$/db/MysqlBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <marker date="1458030097000" expanded="true" signature="820:891" placeholder="SELECT id,ti... pandave_topic" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuAnswerDetail.py">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16574585">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instance/SpiderZhihuQuestionDetail.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68333334">
-          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
