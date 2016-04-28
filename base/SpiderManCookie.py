@@ -8,7 +8,7 @@ cookieHandler = urllib.request.HTTPCookieProcessor(cookieObj)
 
 #通过handler构建opener
 opener = urllib.request.build_opener(cookieHandler);
-response = opener.open('http://www.zhihu.com');
+response = opener.open('http://mobile.umeng.com/apps/load_authorised_apps?per_page=30&page=1&order=&sort_metric=&show_all=false');
 
 for item in cookieObj:
     print('Name = ',item.name)

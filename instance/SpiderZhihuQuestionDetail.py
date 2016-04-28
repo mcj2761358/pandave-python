@@ -5,7 +5,15 @@ import pymysql.cursors
 
 PLATFORAM_NAME = "zhihu";
 
-spiderUrl = 'https://www.zhihu.com/question/30220049'
+
+# 39880275
+# 30220049
+# 35720340
+# 31914864
+# 31272743
+# 37777781
+
+spiderUrl = 'https://www.zhihu.com/question/31914864'
 response = urllib.request.urlopen(spiderUrl)
 responseData = response.read().decode()
 
@@ -41,37 +49,64 @@ def getQuestionSupport(responseData):
 
 ### 获取问题答案
 def getQuestionAnswers(responseData):
+    print(responseData)
     patternAnswerDiv = re.compile('<div tabindex="-1".*? .*?data-aid="(.*?)".*?>'  # aid
                                   '.*?<a class="zg-anchor-hidden".*?name="(.*?)"></a>.*?'  # aid
                                   '<span class="count">(.*?)</span>.*?'  # voteCount
                                   '<a class="zm-item-link-avatar avatar-link".*?>.*?<img.*?>.*?</a>\s*(.*?)\s*'
-                                  '<div class="zm-item-vote-info.*?>.*?'  # author and sign
+                                  '<div class="zm-item-vote-info.*?" data-votecount="(.*?)">.*?'  # author and sign
                                   '<div class="zm-editable-content.*?>\s*(.*?)\s*</div>.*?'  # answer content
-                                  '<span class="answer-date-link-wrap">\s*(.*?)\s*</span>.*?'  # answer date
+                                  '<a.*?class="answer-date-link meta-item".*?>\s*(.*?)\s*</a>.*?'  # answer date
                                   '<a.*?class="meta-item copyright">', re.S)
+
     answerDivs = re.findall(patternAnswerDiv, responseData)
     answerList = []
     for answerDiv in answerDivs:
         answerId = answerDiv[0]
-        voteCount = answerDiv[2]
+        voteCount = answerDiv[4]
         answerAuthorText = answerDiv[3]
-        answerContent = answerDiv[4]
-        answerDateText = answerDiv[5]
+        answerContent = answerDiv[5]
+        answerDateText = answerDiv[6]
+
+        # print(answerId,"---",voteCount,"---",answerAuthorText,"---",answerContent,"---",answerDateText)
+        print(answerId,"---",answerDateText)
+
+        ####################
+        # 解析回复内容并做相关处理
+        # 1.爬取到有图片的数据，需要把<notice></notice>两个元素替换成空字符串
+        # 2.去除带有  <img src="//zhstatic.zhihu.com....> 的元素
+        # 3.图片宽度以百分比(80%)展示
+        # ####################
+        answerContent = answerContent.replace("<noscript>","");
+        answerContent = answerContent.replace("</noscript>","");
+
+        contentPattern = re.compile(r'<img src="//zhstatic.zhihu.com.*?>')
+        contentResults = re.findall(contentPattern, answerContent)
+        for unvalidImg in contentResults :
+            answerContent = answerContent.replace(unvalidImg,"");
+
+        contentPattern = re.compile(r'<img src=".*?".*?width=(.*?) .*?>')
+        contentResults = re.findall(contentPattern, answerContent)
+        for width in contentResults :
+            answerContent = answerContent.replace(width,'"80%"');
+
 
         #################### 解析创建日期和编辑日期 ####################
-        createDate = None;
-        editDate = None;
-        patternCreateDate = re.compile(r'<a class="answer-date-link.*?data-tip=".*?发布于(.*?)".*?>编辑于(.*?)</a>')
-        resultCreateDate = re.search(patternCreateDate, answerDateText)
-        if resultCreateDate:
-            createDate = resultCreateDate.group(1)
-            editDate = resultCreateDate.group(2)
-        else:
-            patternCreateDate = re.compile(r'<a class="answer-date-link.*?>发布于 (.*?)</a>')
-            resultCreateDate = re.search(patternCreateDate, answerDateText)
-            if resultCreateDate:
-                createDate = resultCreateDate.group(1)
-                editDate = resultCreateDate.group(1)
+        createDate = answerDateText[4:];
+        editDate = answerDateText[4:];
+
+
+        # patternCreateDate = re.compile(r'编辑于 (.*?)')
+        # resultCreateDate = re.search(patternCreateDate, answerDateText)
+        # if resultCreateDate:
+        #     createDate = resultCreateDate.group(1)
+        #     editDate = resultCreateDate.group(1)
+        # else:
+        #     patternCreateDate = re.compile(r'<a class="answer-date-link.*?>发布于 (.*?)</a>')
+        #     resultCreateDate = re.search(patternCreateDate, answerDateText)
+        #     if resultCreateDate:
+        #         createDate = resultCreateDate.group(1)
+        #         editDate = resultCreateDate.group(1)
 
         #################### 解析作者信息 ####################
         answerAuthor = None
@@ -118,7 +153,7 @@ topic = {
 
 # 获取知乎问题信息(问题ID,点赞数量,答案作者,作者签名,问题答案,创建时间,编辑时间)
 answerList = getQuestionAnswers(responseData)
-# print("answerList:", answerList)
+print("answerList:", answerList)
 
 
 # ------------------------------------- 将搜集到的数据,插入到数据库 ------------------------------------#
@@ -142,6 +177,7 @@ def handleTopic(topic):
     questionTitle = topic["questionTitle"]
     questionSupport = topic["questionSupport"]
 
+    global topicId;
     conn = getConn()
     try:
         with conn.cursor() as cursor:
@@ -170,7 +206,7 @@ def handleTopic(topic):
                 if result == None:
                     print("话题[",questionId,"]不存在.")
                 else :
-                    topicId = result["id"]
+                    topicId= result["id"]
                 print("插入一条新的话题[", topicId, ":", questionId, "]")
             else:
                 topicId = result["id"]
@@ -223,8 +259,12 @@ def handleTopicAnswer(answerList, topicId, questionId):
                     createDate = answer["createDate"]
                     editDate = answer["editDate"]  # 点赞数量超过1000则处理
                     print("voteCount:", voteCount)
-                    if int(voteCount) > 1000:
+                    if  str(voteCount).endswith("K") or int(voteCount) > 1000:
                         print("回复[", answerId, "]超过1000赞,开始数据处理.")
+
+                        #将K单位的乘以1000
+                        if (str(voteCount).endswith("K")):
+                            voteCount = int(str(voteCount).replace("K",""))*1000;
 
                         # 判断该回答是否已存在,如果不存在,则插入,如果已存在,则更新信息
                         sql = "select id,topic_id,platform_aid,author_name," \
@@ -282,4 +322,5 @@ def handleTopicAnswer(answerList, topicId, questionId):
 
 
 handleTopic(topic)
+print("X",topicId)
 handleTopicAnswer(answerList, topicId, questionId)
