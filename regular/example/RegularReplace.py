@@ -21,4 +21,7 @@ for width in results :
     print(width);
 
 
-
+answerContent = '有山有水有动物<br><img data-rawwidth="720" data-rawheight="537" src="https://pic1.zhimg.com/e190cc9bf12eb797a6f6946f756a78b0_b.jpeg" class="origin_image zh-lightbox-thumb" width="720" data-original="https://pic1.zhimg.com/e190cc9bf12eb797a6f6946f756a78b0_r.jpeg">';
+imgFlagPattern = re.compile(r'<img.*?src="https://.*?".*?>')
+imgFlagResult = re.findall(imgFlagPattern, answerContent);
+print(imgFlagResult)

@@ -13,7 +13,7 @@ PLATFORAM_NAME = "zhihu";
 # 31272743
 # 37777781
 
-spiderUrl = 'https://www.zhihu.com/question/31914864'
+spiderUrl = 'https://www.zhihu.com/question/37777781'
 response = urllib.request.urlopen(spiderUrl)
 responseData = response.read().decode()
 
@@ -67,6 +67,7 @@ def getQuestionAnswers(responseData):
         answerAuthorText = answerDiv[3]
         answerContent = answerDiv[5]
         answerDateText = answerDiv[6]
+        imgFlag = "N";
 
         # print(answerId,"---",voteCount,"---",answerAuthorText,"---",answerContent,"---",answerDateText)
         print(answerId,"---",answerDateText)
@@ -76,6 +77,7 @@ def getQuestionAnswers(responseData):
         # 1.爬取到有图片的数据，需要把<notice></notice>两个元素替换成空字符串
         # 2.去除带有  <img src="//zhstatic.zhihu.com....> 的元素
         # 3.图片宽度以百分比(80%)展示
+        # 4.判断回复是否有图片
         # ####################
         answerContent = answerContent.replace("<noscript>","");
         answerContent = answerContent.replace("</noscript>","");
@@ -89,6 +91,13 @@ def getQuestionAnswers(responseData):
         contentResults = re.findall(contentPattern, answerContent)
         for width in contentResults :
             answerContent = answerContent.replace(width,'"80%"');
+
+        imgFlagPattern = re.compile(r'<img.*?src="https://.*?".*?>')
+        imgFlagResult = re.findall(imgFlagPattern, answerContent);
+        if len(imgFlagResult)==0:
+           pass
+        else:
+            imgFlag = "Y"
 
 
         #################### 解析创建日期和编辑日期 ####################
@@ -132,7 +141,7 @@ def getQuestionAnswers(responseData):
         # 构造返回结果
         answerMap = {"answerId": answerId, "voteCount": voteCount, "answerAuthor": answerAuthor,
                      "answerAuthorLink": answerAuthorLink, "answerAuthorSign": answerAuthorSign,
-                     "answerContent": answerContent, "createDate": createDate, "editDate": editDate}
+                     "answerContent": answerContent, "createDate": createDate, "editDate": editDate,"imgFlag":imgFlag}
         answerList.append(answerMap)
     return answerList
 
@@ -258,7 +267,9 @@ def handleTopicAnswer(answerList, topicId, questionId):
                     answerContent = answer["answerContent"]
                     createDate = answer["createDate"]
                     editDate = answer["editDate"]  # 点赞数量超过1000则处理
-                    print("voteCount:", voteCount)
+                    imgFlag = answer["imgFlag"]
+
+                    # print("voteCount:", voteCount)
                     if  str(voteCount).endswith("K") or int(voteCount) > 1000:
                         print("回复[", answerId, "]超过1000赞,开始数据处理.")
 
@@ -283,11 +294,11 @@ def handleTopicAnswer(answerList, topicId, questionId):
                             # 7. createDate
                             # 8. editDate
                             # 9. voteCount
-                            sql = "INSERT INTO pandave_topic_answer (creator, gmt_create, modifier, gmt_modified, is_deleted, topic_id, platform_aid, author_name, author_id, author_sign, content, answer_create_time, answer_modify_time, vote_count, comment_count) " \
-                                  "VALUES (1, now(), 1, now(), 'N', %s, %s, %s, %s, %s, %s, %s, %s, %s, 0);"
+                            sql = "INSERT INTO pandave_topic_answer (creator, gmt_create, modifier, gmt_modified, is_deleted, topic_id, platform_aid, author_name, author_id, author_sign, content, answer_create_time, answer_modify_time, vote_count, comment_count,img_flag) " \
+                                  "VALUES (1, now(), 1, now(), 'N', %s, %s, %s, %s, %s, %s, %s, %s, %s, 0, %s);"
                             cursor.execute(sql, (
                                 topicId, answerId, answerAuthor, answerAuthorLink, answerAuthorSign, answerContent,
-                                createDate, editDate, voteCount))
+                                createDate, editDate, voteCount, imgFlag))
                             conn.commit()
                             print("回复[", answerId, "]插入完成.")
                         else:
@@ -309,11 +320,11 @@ def handleTopicAnswer(answerList, topicId, questionId):
                                   "content=%s," \
                                   "answer_create_time=%s," \
                                   "answer_modify_time=%s," \
-                                  "vote_count=%s " \
+                                  "vote_count=%s, " \
+                                  "img_flag=%s " \
                                   "where id =%s"
                             cursor.execute(sql, (
-                            answerAuthor, answerAuthorLink, answerAuthorSign, answerContent, createDate, editDate, voteCount,
-                            id))
+                            answerAuthor, answerAuthorLink, answerAuthorSign, answerContent, createDate, editDate, voteCount,imgFlag,id))
                             conn.commit()
                     else:
                         print("回复[", answerId, "]赞的数量不超过1000.")
