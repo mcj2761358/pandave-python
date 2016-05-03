@@ -12,16 +12,24 @@ results = re.findall(pattern, content)
 for validImg in results :
     # print(validImg)
     content = content.replace(validImg,"");
-    print(content)
+    # print(content)
 
 pattern = re.compile(r'<img src=".*?".*?width=(.*?) .*?>')
 results = re.findall(pattern, content)
 for width in results :
-    # content = content.replace(width,'width="80%"');
-    print(width);
+    content = content.replace(width,'width="80%"');
+    # print(width);
 
 
 answerContent = '有山有水有动物<br><img data-rawwidth="720" data-rawheight="537" src="https://pic1.zhimg.com/e190cc9bf12eb797a6f6946f756a78b0_b.jpeg" class="origin_image zh-lightbox-thumb" width="720" data-original="https://pic1.zhimg.com/e190cc9bf12eb797a6f6946f756a78b0_r.jpeg">';
 imgFlagPattern = re.compile(r'<img.*?src="https://.*?".*?>')
 imgFlagResult = re.findall(imgFlagPattern, answerContent);
-print(imgFlagResult)
+# print(imgFlagResult)
+
+
+
+
+spiderUrl = "http://www.zhihu.com/question/20899988/a";
+spiderpattern = re.compile(r'http://www.zhihu.com/question/\d+$')
+results = re.match(spiderpattern,spiderUrl)
+print(results)

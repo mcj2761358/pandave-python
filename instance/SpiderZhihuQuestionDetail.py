@@ -13,9 +13,6 @@ PLATFORAM_NAME = "zhihu";
 # 31272743
 # 37777781
 
-spiderUrl = 'https://www.zhihu.com/question/37777781'
-response = urllib.request.urlopen(spiderUrl)
-responseData = response.read().decode()
 
 
 # print(responseData)
@@ -49,17 +46,29 @@ def getQuestionSupport(responseData):
 
 ### 获取问题答案
 def getQuestionAnswers(responseData):
-    print(responseData)
-    patternAnswerDiv = re.compile('<div tabindex="-1".*? .*?data-aid="(.*?)".*?>'  # aid
+    # print(responseData)
+    # patternAnswerDiv = re.compile('<div tabindex="-1".*?data-aid="(.*?)".*?>'  # aid
+    #                               '.*?<a class="zg-anchor-hidden".*?name="(.*?)"></a>.*?'  # aid
+    #                               '<span class="count">(.*?)</span>.*?'  # voteCount
+    #                               '\s*(.*?)\s*'
+    #                               '<div class="zm-item-vote-info.*?" data-votecount="(.*?)">.*?'  # author and sign
+    #                               '<div class="zm-editable-content.*?>\s*(.*?)\s*</div>.*?'  # answer content
+    #                               '<a.*?class="answer-date-link meta-item".*?>\s*(.*?)\s*</a>.*?'  # answer date
+    #                               '<a.*?class="meta-item copyright">', re.S)
+
+    patternAnswerDiv = re.compile(r'<div tabindex="-1".*? .*?data-aid="(.*?)".*?>'  # aid
                                   '.*?<a class="zg-anchor-hidden".*?name="(.*?)"></a>.*?'  # aid
                                   '<span class="count">(.*?)</span>.*?'  # voteCount
-                                  '<a class="zm-item-link-avatar avatar-link".*?>.*?<img.*?>.*?</a>\s*(.*?)\s*'
+                                  '\s*(.*?)\s*'
                                   '<div class="zm-item-vote-info.*?" data-votecount="(.*?)">.*?'  # author and sign
-                                  '<div class="zm-editable-content.*?>\s*(.*?)\s*</div>.*?'  # answer content
-                                  '<a.*?class="answer-date-link meta-item".*?>\s*(.*?)\s*</a>.*?'  # answer date
-                                  '<a.*?class="meta-item copyright">', re.S)
+                                  '<div class="zm-editable-content.*?".*?>\s*(.*?)\s*</div>.*?'  # answer content
+                                  '<a.*?class="answer-date-link meta-item".*?>(.*?)</a>.*?'  # answer date
+                                  '<a.*?class="meta-item copyright".*?>', re.S)
 
-    answerDivs = re.findall(patternAnswerDiv, responseData)
+    try :
+        answerDivs = re.findall(patternAnswerDiv, responseData)
+    except :
+        print("error:"+topicId)
     answerList = []
     for answerDiv in answerDivs:
         answerId = answerDiv[0]
@@ -70,7 +79,7 @@ def getQuestionAnswers(responseData):
         imgFlag = "N";
 
         # print(answerId,"---",voteCount,"---",answerAuthorText,"---",answerContent,"---",answerDateText)
-        print(answerId,"---",answerDateText)
+        # print(answerId, "---", answerDateText)
 
         ####################
         # 解析回复内容并做相关处理
@@ -79,31 +88,29 @@ def getQuestionAnswers(responseData):
         # 3.图片宽度以百分比(80%)展示
         # 4.判断回复是否有图片
         # ####################
-        answerContent = answerContent.replace("<noscript>","");
-        answerContent = answerContent.replace("</noscript>","");
+        answerContent = answerContent.replace("<noscript>", "");
+        answerContent = answerContent.replace("</noscript>", "");
 
         contentPattern = re.compile(r'<img src="//zhstatic.zhihu.com.*?>')
         contentResults = re.findall(contentPattern, answerContent)
-        for unvalidImg in contentResults :
-            answerContent = answerContent.replace(unvalidImg,"");
+        for unvalidImg in contentResults:
+            answerContent = answerContent.replace(unvalidImg, "");
 
         contentPattern = re.compile(r'<img src=".*?".*?width=(.*?) .*?>')
         contentResults = re.findall(contentPattern, answerContent)
-        for width in contentResults :
-            answerContent = answerContent.replace(width,'"80%"');
+        for width in contentResults:
+            answerContent = answerContent.replace(width, '"80%"');
 
         imgFlagPattern = re.compile(r'<img.*?src="https://.*?".*?>')
         imgFlagResult = re.findall(imgFlagPattern, answerContent);
-        if len(imgFlagResult)==0:
-           pass
+        if len(imgFlagResult) == 0:
+            pass
         else:
             imgFlag = "Y"
-
 
         #################### 解析创建日期和编辑日期 ####################
         createDate = answerDateText[4:];
         editDate = answerDateText[4:];
-
 
         # patternCreateDate = re.compile(r'编辑于 (.*?)')
         # resultCreateDate = re.search(patternCreateDate, answerDateText)
@@ -141,28 +148,9 @@ def getQuestionAnswers(responseData):
         # 构造返回结果
         answerMap = {"answerId": answerId, "voteCount": voteCount, "answerAuthor": answerAuthor,
                      "answerAuthorLink": answerAuthorLink, "answerAuthorSign": answerAuthorSign,
-                     "answerContent": answerContent, "createDate": createDate, "editDate": editDate,"imgFlag":imgFlag}
+                     "answerContent": answerContent, "createDate": createDate, "editDate": editDate, "imgFlag": imgFlag}
         answerList.append(answerMap)
     return answerList
-
-
-# 知乎问题ID
-questionId = getQuestionId(responseData)
-# 获取问题标题
-questionTitle = getQuestionTitle(responseData)
-# 获取问题补充
-questionSupport = getQuestionSupport(responseData)
-
-topic = {
-    "questionId": questionId,
-    "questionTitle": questionTitle,
-    "questionSupport": questionSupport
-}
-# print(topic)
-
-# 获取知乎问题信息(问题ID,点赞数量,答案作者,作者签名,问题答案,创建时间,编辑时间)
-answerList = getQuestionAnswers(responseData)
-print("answerList:", answerList)
 
 
 # ------------------------------------- 将搜集到的数据,插入到数据库 ------------------------------------#
@@ -187,7 +175,7 @@ def handleTopic(topic):
     questionSupport = topic["questionSupport"]
 
     global topicId;
-    conn = getConn()
+    conn = getConn();
     try:
         with conn.cursor() as cursor:
             # Read a single record
@@ -213,9 +201,9 @@ def handleTopic(topic):
                 cursor.execute(sql, (questionId, PLATFORAM_NAME))
                 result = cursor.fetchone()
                 if result == None:
-                    print("话题[",questionId,"]不存在.")
-                else :
-                    topicId= result["id"]
+                    print("话题[", questionId, "]不存在.")
+                else:
+                    topicId = result["id"]
                 print("插入一条新的话题[", topicId, ":", questionId, "]")
             else:
                 topicId = result["id"]
@@ -254,7 +242,7 @@ def handleTopicAnswer(answerList, topicId, questionId):
         return
     else:
 
-        conn = getConn()
+        conn = getConn();
         try:
             with conn.cursor() as cursor:
 
@@ -270,12 +258,12 @@ def handleTopicAnswer(answerList, topicId, questionId):
                     imgFlag = answer["imgFlag"]
 
                     # print("voteCount:", voteCount)
-                    if  str(voteCount).endswith("K") or int(voteCount) > 1000:
+                    if str(voteCount).endswith("K") or int(voteCount) > 1000:
                         print("回复[", answerId, "]超过1000赞,开始数据处理.")
 
-                        #将K单位的乘以1000
+                        # 将K单位的乘以1000
                         if (str(voteCount).endswith("K")):
-                            voteCount = int(str(voteCount).replace("K",""))*1000;
+                            voteCount = int(str(voteCount).replace("K", "")) * 1000;
 
                         # 判断该回答是否已存在,如果不存在,则插入,如果已存在,则更新信息
                         sql = "select id,topic_id,platform_aid,author_name," \
@@ -324,14 +312,43 @@ def handleTopicAnswer(answerList, topicId, questionId):
                                   "img_flag=%s " \
                                   "where id =%s"
                             cursor.execute(sql, (
-                            answerAuthor, answerAuthorLink, answerAuthorSign, answerContent, createDate, editDate, voteCount,imgFlag,id))
+                                answerAuthor, answerAuthorLink, answerAuthorSign, answerContent, createDate, editDate,
+                                voteCount, imgFlag, id))
                             conn.commit()
                     else:
                         print("回复[", answerId, "]赞的数量不超过1000.")
+        except:
+            print("error")
         finally:
             conn.close()
 
 
-handleTopic(topic)
-print("X",topicId)
-handleTopicAnswer(answerList, topicId, questionId)
+def executeTopic(spiderUrl):
+    try:
+        response = urllib.request.urlopen(spiderUrl)
+        responseData = response.read().decode()
+
+        # 知乎问题ID
+        questionId = getQuestionId(responseData)
+        # 获取问题标题
+        questionTitle = getQuestionTitle(responseData)
+        # 获取问题补充
+        questionSupport = getQuestionSupport(responseData)
+
+        topic = {
+            "questionId": questionId,
+            "questionTitle": questionTitle,
+            "questionSupport": questionSupport
+        }
+        # print(topic)
+
+        # 获取知乎问题信息(问题ID,点赞数量,答案作者,作者签名,问题答案,创建时间,编辑时间)
+        answerList = getQuestionAnswers(responseData)
+        print(answerList)
+
+        handleTopic(topic)
+        handleTopicAnswer(answerList, topicId, questionId)
+    except :
+        print("OPEN URL[",spiderUrl,"] ERROR")
+
+# executeTopic("http://www.zhihu.com/question/20216472")
